@@ -31,20 +31,17 @@
 				<extensions>true</extensions>
 				<configuration>
 				<classifier>mule-application</classifier>
-				<cloudHubDeployment>
-      <uri>https://anypoint.mulesoft.com</uri>
-      <muleVersion>${app.runtime}</muleVersion>
-      <username>${username}</username>
-      <password>${password}</password>
-      <applicationName>${cloudhub.application.name}</applicationName>
-      <environment>${environment}</environment>
-      <region>${region}</region>
-      <workers>${workers}</workers>
-      <workerType>${workerType}</workerType>
-      <properties>
-        <key>value</key>
-      </properties>
-    </cloudHubDeployment>
+				 <cloudHubDeployment>
+				<uri>https://anypoint.mulesoft.com</uri>
+				<username>${username}</username>
+				<password>${password}</password>
+				<environment>${environment}</environment>
+				<applicationName>${ application.name}</applicationName>
+				<muleVersion>${mule.version}</muleVersion>
+				<workers>${workers}</workers>
+				<workerType>${worker.Type}</workerType>
+				<objectStoreV2>true</objectStoreV2>
+				</cloudHubDeployment>
 				
 				</configuration>
 			</plugin>
